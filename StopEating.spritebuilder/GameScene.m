@@ -60,4 +60,24 @@
 	[[CCDirector sharedDirector] presentScene:scene withTransition:transition];
 }
 
+-(void)update:(CCTime)delta
+{
+    // update scroll node position to player node, with offset to center player in the view
+    [self scrollToTarget:_playerNode];
+}
+
+-(void)scrollToTarget:(CCNode*)target
+{
+    CGSize viewSize = [CCDirector sharedDirector].viewSize;
+    CGPoint viewCenter = CGPointMake(viewSize.width/2.0, viewSize.height/2.0);
+    
+    CGPoint viewPos = ccpSub(target.positionInPoints, viewCenter);
+    CGSize levelSize = _levelNode.contentSizeInPoints;
+    
+    viewPos.x = MAX(0.0, MIN(viewPos.x, levelSize.width-viewSize.width));
+    viewPos.y = MAX(0.0, MIN(viewPos.y, levelSize.height-viewSize.height));
+    
+    _levelNode.positionInPoints = ccpNeg(viewPos);
+}
+
 @end
