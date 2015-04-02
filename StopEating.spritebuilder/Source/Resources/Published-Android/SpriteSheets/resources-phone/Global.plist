@@ -4,49 +4,10 @@
 <dict>
 	<key>frames</key>
 	<dict>
-		<key>SpriteSheets/Global/player-anim1.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{198, 1}, {66, 66}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {66, 66}}</string>
-			<key>sourceSize</key>
-			<string>{66, 66}</string>
-		</dict>
-		<key>SpriteSheets/Global/player-anim2.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{198, 69}, {66, 66}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {66, 66}}</string>
-			<key>sourceSize</key>
-			<string>{66, 66}</string>
-		</dict>
-		<key>SpriteSheets/Global/player-anim3.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{266, 1}, {66, 66}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {66, 66}}</string>
-			<key>sourceSize</key>
-			<string>{66, 66}</string>
-		</dict>
 		<key>SpriteSheets/Global/player.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{266, 69}, {64, 64}}</string>
+			<string>{{1, 1}, {64, 64}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -56,78 +17,13 @@
 			<key>sourceSize</key>
 			<string>{64, 64}</string>
 		</dict>
-		<key>SpriteSheets/Global/playereyes1.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{1, 333}, {133, 133}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {133, 133}}</string>
-			<key>sourceSize</key>
-			<string>{133, 133}</string>
-		</dict>
-		<key>SpriteSheets/Global/playereyes2.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{136, 198}, {133, 133}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {133, 133}}</string>
-			<key>sourceSize</key>
-			<string>{133, 133}</string>
-		</dict>
-		<key>SpriteSheets/Global/playereyes3.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{136, 333}, {133, 133}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {133, 133}}</string>
-			<key>sourceSize</key>
-			<string>{133, 133}</string>
-		</dict>
-		<key>SpriteSheets/Global/playerfaceless.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{1, 1}, {195, 195}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {195, 195}}</string>
-			<key>sourceSize</key>
-			<string>{195, 195}</string>
-		</dict>
-		<key>SpriteSheets/Global/playermouth.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{1, 198}, {133, 133}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {133, 133}}</string>
-			<key>sourceSize</key>
-			<string>{133, 133}</string>
-		</dict>
 	</dict>
 	<key>metadata</key>
 	<dict>
 		<key>format</key>
 		<integer>2</integer>
 		<key>size</key>
-		<string>{512, 512}</string>
+		<string>{128, 128}</string>
 		<key>textureFileName</key>
 		<string>Global.png</string>
 	</dict>

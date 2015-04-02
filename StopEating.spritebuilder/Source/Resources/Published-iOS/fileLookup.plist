@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>filenames</key>
-	<dict/>
+	<dict>
+		<key>Sprites/Level1/level1_background_Cerberus.png</key>
+		<string>Sprites/Level1/level1_background_Cerberus.pvr.ccz</string>
+	</dict>
 	<key>metadata</key>
 	<dict>
 		<key>version</key>

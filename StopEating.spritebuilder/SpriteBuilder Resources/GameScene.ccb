@@ -100,8 +100,6 @@
 						<string>Levels/Level1.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -135,11 +133,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.13732388615608215</real>
-							<real>0.92500001192092896</real>
+							<real>154.99996948242188</real>
+							<real>41</real>
 							<integer>0</integer>
-							<integer>2</integer>
-							<integer>2</integer>
+							<integer>0</integer>
+							<integer>0</integer>
 						</array>
 					</dict>
 					<dict>
@@ -428,6 +426,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
