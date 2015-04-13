@@ -7,7 +7,7 @@
 		<key>SpriteSheets/Global/player.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1}, {128, 128}}</string>
+			<string>{{1, 804}, {128, 128}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -17,13 +17,91 @@
 			<key>sourceSize</key>
 			<string>{128, 128}</string>
 		</dict>
+		<key>SpriteSheets/Global/playereyes1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{269, 536}, {266, 266}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {266, 266}}</string>
+			<key>sourceSize</key>
+			<string>{266, 266}</string>
+		</dict>
+		<key>SpriteSheets/Global/playereyes2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{537, 1}, {266, 266}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {266, 266}}</string>
+			<key>sourceSize</key>
+			<string>{266, 266}</string>
+		</dict>
+		<key>SpriteSheets/Global/playereyes3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{537, 269}, {266, 266}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {266, 266}}</string>
+			<key>sourceSize</key>
+			<string>{266, 266}</string>
+		</dict>
+		<key>SpriteSheets/Global/playerface.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{537, 537}, {266, 266}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {266, 266}}</string>
+			<key>sourceSize</key>
+			<string>{266, 266}</string>
+		</dict>
+		<key>SpriteSheets/Global/playerfaceless.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {533, 533}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {533, 533}}</string>
+			<key>sourceSize</key>
+			<string>{533, 533}</string>
+		</dict>
+		<key>SpriteSheets/Global/playermouth.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 536}, {266, 266}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {266, 266}}</string>
+			<key>sourceSize</key>
+			<string>{266, 266}</string>
+		</dict>
 	</dict>
 	<key>metadata</key>
 	<dict>
 		<key>format</key>
 		<integer>2</integer>
 		<key>size</key>
-		<string>{256, 256}</string>
+		<string>{1024, 1024}</string>
 		<key>textureFileName</key>
 		<string>Global.png</string>
 	</dict>
