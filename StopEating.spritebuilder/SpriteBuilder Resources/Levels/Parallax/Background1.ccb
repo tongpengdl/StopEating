@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>75</integer>
+	<integer>78</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -158,7 +158,7 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>2</integer>
+				<integer>77</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -166,9 +166,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>level1_background_Cerberus</string>
-				<key>locked</key>
-				<true/>
+				<string>underwater tileable_0</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -190,8 +188,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>582.03485107421875</real>
+							<real>424.39395141601562</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -204,8 +202,8 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>0.5</real>
+							<real>0.5</real>
 						</array>
 					</dict>
 					<dict>
@@ -215,8 +213,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>4.547147274017334</real>
+							<real>3.3868989944458008</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -229,7 +227,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Sprites/Level1/level1_background_Cerberus.png</string>
+							<string>Sprites/Level1/underwater tileable_0.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -265,6 +263,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -7099,8 +7099,6 @@
 								<array/>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
