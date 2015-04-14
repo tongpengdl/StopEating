@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>SpriteSheets/Koala animation/koala_idle.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{415, 1}, {72, 102}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {72, 102}}</string>
+			<key>sourceSize</key>
+			<string>{72, 102}</string>
+		</dict>
+		<key>SpriteSheets/Koala animation/koala_idle@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 207}, {144, 204}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 204}}</string>
+			<key>sourceSize</key>
+			<string>{144, 204}</string>
+		</dict>
+		<key>SpriteSheets/Koala animation/koala_jump.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{415, 105}, {72, 102}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {72, 102}}</string>
+			<key>sourceSize</key>
+			<string>{72, 102}</string>
+		</dict>
+		<key>SpriteSheets/Koala animation/koala_jump@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {144, 204}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 204}}</string>
+			<key>sourceSize</key>
+			<string>{144, 204}</string>
+		</dict>
+		<key>SpriteSheets/Koala animation/koala_walk01.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 413}, {72, 102}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {72, 102}}</string>
+			<key>sourceSize</key>
+			<string>{72, 102}</string>
+		</dict>
+		<key>SpriteSheets/Koala animation/koala_walk01@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{209, 1}, {144, 204}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 204}}</string>
+			<key>sourceSize</key>
+			<string>{144, 204}</string>
+		</dict>
+		<key>SpriteSheets/Koala animation/koala_walk02.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{105, 413}, {72, 102}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {72, 102}}</string>
+			<key>sourceSize</key>
+			<string>{72, 102}</string>
+		</dict>
+		<key>SpriteSheets/Koala animation/koala_walk02@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{209, 147}, {144, 204}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 204}}</string>
+			<key>sourceSize</key>
+			<string>{144, 204}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{512, 512}</string>
+		<key>textureFileName</key>
+		<string>Koala animation.png</string>
+	</dict>
+</dict>
+</plist>

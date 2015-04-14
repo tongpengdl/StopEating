@@ -92,9 +92,13 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>SpriteSheets/Koala animation</key>
+		<dict/>
 		<key>SpriteSheets/Level1a</key>
 		<dict>
 			<key>format_ios_compress</key>
+			<true/>
+			<key>isDirty</key>
 			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
@@ -109,6 +113,63 @@
 			<true/>
 			<key>previewFolderHidden</key>
 			<true/>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/flame1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/flame2.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_dead01.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_dead02.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_fall01.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run01.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run02.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run03.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run04.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
 		</dict>
 		<key>Sprites</key>
 		<dict/>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_cookie01.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{137, 59}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_cookie01@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{35, 77}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_cookie02.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{137, 79}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_cookie02@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{103, 77}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_croissant.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{137, 39}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_croissant@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{69, 1}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_cupcake.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{197, 1}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_cupcake@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_donut.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{155, 19}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_donut@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{69, 39}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_eclair.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{137, 99}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_eclair@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{35, 39}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_macaroon.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{237, 1}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_macaroon@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 39}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_pie.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{137, 19}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_pie@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{103, 39}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_poptart01.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{137, 1}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_poptart01@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 77}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_poptart02.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 1}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_poptart02@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{35, 1}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_starcookie01.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{157, 1}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_starcookie01@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{69, 77}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_starcookie02.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{177, 1}, {16, 18}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {16, 18}}</string>
+			<key>sourceSize</key>
+			<string>{16, 18}</string>
+		</dict>
+		<key>SpriteSheets/Pastries_64x72/pastry_starcookie02@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{103, 1}, {32, 36}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 36}}</string>
+			<key>sourceSize</key>
+			<string>{32, 36}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{256, 128}</string>
+		<key>textureFileName</key>
+		<string>Pastries_64x72.png</string>
+	</dict>
+</dict>
+</plist>

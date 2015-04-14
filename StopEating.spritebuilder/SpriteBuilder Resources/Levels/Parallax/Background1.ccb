@@ -188,8 +188,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>582.03485107421875</real>
-							<real>424.39395141601562</real>
+							<real>585.45257568359375</real>
+							<real>450</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -213,8 +213,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>4.547147274017334</real>
-							<real>3.3868989944458008</real>
+							<real>4.5738482475280762</real>
+							<real>4.0339760780334473</real>
 							<false/>
 							<integer>0</integer>
 						</array>

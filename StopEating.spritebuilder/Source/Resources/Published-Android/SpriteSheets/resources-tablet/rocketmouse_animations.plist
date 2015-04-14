@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>SpriteSheets/rocketmouse_animations/flame1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{93, 409}, {44, 64}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {44, 64}}</string>
+			<key>sourceSize</key>
+			<string>{44, 64}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/flame1@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{47, 409}, {44, 64}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {44, 64}}</string>
+			<key>sourceSize</key>
+			<string>{44, 64}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/flame2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 409}, {44, 64}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {44, 64}}</string>
+			<key>sourceSize</key>
+			<string>{44, 64}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/flame2@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{139, 409}, {44, 64}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {44, 64}}</string>
+			<key>sourceSize</key>
+			<string>{44, 64}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_dead01.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{385, 1}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_dead01@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{649, 1}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_dead02.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{513, 1}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_dead02@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{385, 273}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_fall01.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 273}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_fall01@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{129, 137}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run01.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 137}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run01@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{129, 273}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run02.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{385, 137}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run02@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{129, 1}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run03.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{257, 137}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run03@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{257, 1}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run04.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{257, 273}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+		<key>SpriteSheets/rocketmouse_animations/rocketmouse_run04@2x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {134, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 126}}</string>
+			<key>sourceSize</key>
+			<string>{134, 126}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{1024, 512}</string>
+		<key>textureFileName</key>
+		<string>rocketmouse_animations.png</string>
+	</dict>
+</dict>
+</plist>
