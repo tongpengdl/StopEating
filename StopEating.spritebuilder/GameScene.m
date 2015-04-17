@@ -7,6 +7,7 @@
 //
 
 #import "GameScene.h"
+#import "cocos2d.h"
 
 @implementation GameScene
 {
@@ -14,6 +15,8 @@
 	__weak CCPhysicsNode* _physicsNode;
 	__weak CCNode* _playerNode;
 	__weak CCNode* _backgroundNode;
+    __weak CCNode* _scaleupNode;
+    __weak CCNode* _scaledownNode;
 }
 
 -(void) didLoadFromCCB
@@ -32,10 +35,14 @@
 	_physicsNode = (CCPhysicsNode*)[_levelNode getChildByName:@"physics" recursively:NO];
 	_backgroundNode = [_levelNode getChildByName:@"background" recursively:NO];
 	_playerNode = [_physicsNode getChildByName:@"player" recursively:YES];
+    _scaleupNode = [_physicsNode getChildByName:@"scaleupstar" recursively:YES];
+    _scaledownNode = [_physicsNode getChildByName:@"scaledownstar" recursively:YES];
 	
 	NSAssert1(_physicsNode, @"physics node not found in level: %@", levelCCB);
 	NSAssert1(_backgroundNode, @"background node not found in level: %@", levelCCB);
 	NSAssert1(_playerNode, @"player node not found in level: %@", levelCCB);
+    NSAssert1(_scaleupNode, @"scaleup star not found in level: %@", levelCCB);
+    NSAssert1(_scaledownNode, @"scaledown star not found in level: %@", levelCCB);
 }
 
 -(void) touchBegan:(CCTouch *)touch withEvent:(UIEvent *)event
@@ -43,9 +50,10 @@
 	[_playerNode stopActionByTag:1];
 
 	CGPoint pos = [touch locationInNode:_physicsNode];
-	CCAction* move = [CCActionMoveTo actionWithDuration:2.0 position:pos];
+	CCActionMoveTo* move = [CCActionMoveTo actionWithDuration:2.0 position:pos];
 	move.tag = 1;
-	[_playerNode runAction:move];
+    CCActionEaseInOut* ease = [CCActionEaseInOut actionWithAction:move rate:3];
+    [_playerNode runAction:ease];
 }
 
 -(void) exitButtonPressed

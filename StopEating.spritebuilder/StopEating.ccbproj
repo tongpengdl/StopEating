@@ -103,7 +103,7 @@
 			<key>isSmartSpriteSheet</key>
 			<true/>
 			<key>previewFolderHidden</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>SpriteSheets/Level1b</key>
 		<dict>
@@ -112,12 +112,10 @@
 			<key>isSmartSpriteSheet</key>
 			<true/>
 			<key>previewFolderHidden</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>SpriteSheets/Pastries_64x72</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
@@ -176,7 +174,7 @@
 		<key>Sprites/Level1</key>
 		<dict>
 			<key>previewFolderHidden</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Sprites/Level1/level1_background_Cerberus.png</key>
 		<dict>
