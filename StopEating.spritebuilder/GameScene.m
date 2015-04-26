@@ -17,6 +17,16 @@
 	__weak CCNode* _backgroundNode;
     __weak CCNode* _scaleupNode;
     __weak CCNode* _scaledownNode;
+    
+    
+    CGFloat _playerNudgeRightVelocity;
+    CGFloat _playerNudgeUpVelocity;
+    CGFloat _playerMaxVelocity;
+    BOOL _acceleratePlayer;
+<<<<<<< HEAD
+    BOOL _drawPhysicsShapes;
+=======
+>>>>>>> origin/master
 }
 
 -(void) didLoadFromCCB
@@ -37,6 +47,10 @@
 	_playerNode = [_physicsNode getChildByName:@"player" recursively:YES];
     _scaleupNode = [_physicsNode getChildByName:@"scaleupstar" recursively:YES];
     _scaledownNode = [_physicsNode getChildByName:@"scaledownstar" recursively:YES];
+    
+    _physicsNode.debugDraw=false;
+    
+    _physicsNode.collisionDelegate=self;
 	
 	NSAssert1(_physicsNode, @"physics node not found in level: %@", levelCCB);
 	NSAssert1(_backgroundNode, @"background node not found in level: %@", levelCCB);
@@ -47,29 +61,80 @@
 
 -(void) touchBegan:(CCTouch *)touch withEvent:(UIEvent *)event
 {
-	[_playerNode stopActionByTag:1];
-
-	CGPoint pos = [touch locationInNode:_physicsNode];
-	CCActionMoveTo* move = [CCActionMoveTo actionWithDuration:2.0 position:pos];
-	move.tag = 1;
-    CCActionEaseInOut* ease = [CCActionEaseInOut actionWithAction:move rate:3];
-    [_playerNode runAction:ease];
+    _acceleratePlayer=YES;
 }
+
+-(void) touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+{
+    _acceleratePlayer=NO;
+}
+
+-(void) touchCancelled:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+{
+    [self touchEnded:touch withEvent:event];
+}
+
+-(void) update:(CCTime)delta
+{
+<<<<<<< HEAD
+    if(_playerNode.position.y<-_playerNode.contentSize.height)
+    {
+        [_playerNode removeFromParent];
+    }
+=======
+>>>>>>> origin/master
+    if(_acceleratePlayer){
+        [self accelerateTarget:_playerNode];
+    }
+    
+    [self scrollToTarget:_playerNode];
+    
+}
+
+-(void) accelerateTarget:(CCNode*)target
+{
+<<<<<<< HEAD
+    //_playerMaxVelocity =100.0;
+    //_playerNudgeRightVelocity =30.0;
+    //_playerNudgeUpVelocity =80.0;
+=======
+    _playerMaxVelocity =100.0;
+    _playerNudgeRightVelocity =30.0;
+    _playerNudgeUpVelocity =80.0;
+>>>>>>> origin/master
+    
+    CCPhysicsBody* physicsBody = target.physicsBody;
+    
+    if(physicsBody.velocity.x<0){
+        physicsBody.velocity = CGPointMake(0.0, physicsBody.velocity.y);
+    }
+    
+    [physicsBody applyImpulse:CGPointMake(_playerNudgeRightVelocity, _playerNudgeUpVelocity)];
+    
+    if (ccpLength(physicsBody.velocity)>_playerMaxVelocity) {
+        CGPoint direction = ccpNormalize(physicsBody.velocity);
+        physicsBody.velocity = ccpMult(direction, _playerMaxVelocity);
+    }
+    
+}
+
+<<<<<<< HEAD
+-(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player wildcard:(CCNode *)wildcard
+{
+    NSLog(@"collision - player: %@, wildcard: %@", player, wildcard);
+    return YES;
+}
+
+=======
+>>>>>>> origin/master
 
 -(void) exitButtonPressed
 {
-	NSLog(@"Get me outa here!");
-	
 	CCScene* scene = [CCBReader loadAsScene:@"MainScene"];
 	CCTransition* transition = [CCTransition transitionFadeWithDuration:1.5];
 	[[CCDirector sharedDirector] presentScene:scene withTransition:transition];
 }
 
--(void) update:(CCTime)delta
-{
-	// update scroll node position to player node, with offset to center player in the view
-	[self scrollToTarget:_playerNode];
-}
 
 -(void) scrollToTarget:(CCNode*)target
 {
@@ -96,6 +161,13 @@
 									   viewPosPercent.y * (layerSize.height - viewSize.height));
 		layer.positionInPoints = ccpNeg(layerPos);
 	}
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player exit:(CCNode *)exit
+{
+    [player removeFromParent];
+    [exit removeFromParent];
+    return NO;
 }
 
 @end

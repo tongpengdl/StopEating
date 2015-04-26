@@ -430,6 +430,39 @@
 		</array>
 		<key>customClass</key>
 		<string>GameScene</string>
+		<key>customProperties</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>_playerMaxVelocity</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>1</integer>
+				<key>value</key>
+				<string>100.000000</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>_playerNudgeRightVelocity</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>1</integer>
+				<key>value</key>
+				<string>80.000000</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>_playerNudgeUpVelocity</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>1</integer>
+				<key>value</key>
+				<string>80.000000</string>
+			</dict>
+		</array>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -498,6 +531,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
