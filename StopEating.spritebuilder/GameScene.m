@@ -24,7 +24,10 @@
     CGFloat _playerMaxVelocity;
     BOOL _acceleratePlayer;
 <<<<<<< HEAD
+<<<<<<< HEAD
     BOOL _drawPhysicsShapes;
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 }
@@ -77,10 +80,13 @@
 -(void) update:(CCTime)delta
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     if(_playerNode.position.y<-_playerNode.contentSize.height)
     {
         [_playerNode removeFromParent];
     }
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
     if(_acceleratePlayer){
@@ -94,9 +100,15 @@
 -(void) accelerateTarget:(CCNode*)target
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     //_playerMaxVelocity =100.0;
     //_playerNudgeRightVelocity =30.0;
     //_playerNudgeUpVelocity =80.0;
+=======
+    _playerMaxVelocity =100.0;
+    _playerNudgeRightVelocity =30.0;
+    _playerNudgeUpVelocity =80.0;
+>>>>>>> origin/master
 =======
     _playerMaxVelocity =100.0;
     _playerNudgeRightVelocity =30.0;
@@ -119,12 +131,15 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 -(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player wildcard:(CCNode *)wildcard
 {
     NSLog(@"collision - player: %@, wildcard: %@", player, wildcard);
     return YES;
 }
 
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 
