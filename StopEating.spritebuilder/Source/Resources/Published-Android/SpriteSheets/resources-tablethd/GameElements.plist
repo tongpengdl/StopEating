@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>SpriteSheets/GameElements/chainball_ball.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{3547, 1}, {416, 416}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {416, 416}}</string>
+			<key>sourceSize</key>
+			<string>{416, 416}</string>
+		</dict>
+		<key>SpriteSheets/GameElements/chainball_chain1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1878}, {55, 137}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {55, 137}}</string>
+			<key>sourceSize</key>
+			<string>{55, 137}</string>
+		</dict>
+		<key>SpriteSheets/GameElements/chainball_chain2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{58, 1878}, {78, 132}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {78, 132}}</string>
+			<key>sourceSize</key>
+			<string>{78, 132}</string>
+		</dict>
+		<key>SpriteSheets/GameElements/circularsaw1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1878, 1}, {1667, 1667}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {1667, 1667}}</string>
+			<key>sourceSize</key>
+			<string>{1667, 1667}</string>
+		</dict>
+		<key>SpriteSheets/GameElements/gear1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {1875, 1875}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {1875, 1875}}</string>
+			<key>sourceSize</key>
+			<string>{1875, 1875}</string>
+		</dict>
+		<key>SpriteSheets/GameElements/springboard_board.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{138, 1971}, {416, 52}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {416, 52}}</string>
+			<key>sourceSize</key>
+			<string>{416, 52}</string>
+		</dict>
+		<key>SpriteSheets/GameElements/springboard_metal.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{138, 1878}, {416, 91}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {416, 91}}</string>
+			<key>sourceSize</key>
+			<string>{416, 91}</string>
+		</dict>
+		<key>SpriteSheets/GameElements/springboard_spring.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1878, 1670}, {254, 234}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {254, 234}}</string>
+			<key>sourceSize</key>
+			<string>{254, 234}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{4096, 2048}</string>
+		<key>textureFileName</key>
+		<string>GameElements.png</string>
+	</dict>
+</dict>
+</plist>

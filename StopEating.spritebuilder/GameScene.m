@@ -23,13 +23,9 @@
     CGFloat _playerNudgeUpVelocity;
     CGFloat _playerMaxVelocity;
     BOOL _acceleratePlayer;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     BOOL _drawPhysicsShapes;
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
+
 }
 
 -(void) didLoadFromCCB
@@ -54,6 +50,9 @@
     _physicsNode.debugDraw=false;
     
     _physicsNode.collisionDelegate=self;
+    
+    CCNode* sawNoAutoplay = [_physicsNode getChildByName:@"sawNoAutoplay" recursively:YES];
+    [sawNoAutoplay.animationManager runAnimationsForSequenceNamed:@"Default Timeline"];
 	
 	NSAssert1(_physicsNode, @"physics node not found in level: %@", levelCCB);
 	NSAssert1(_backgroundNode, @"background node not found in level: %@", levelCCB);
@@ -79,16 +78,12 @@
 
 -(void) update:(CCTime)delta
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     if(_playerNode.position.y<-_playerNode.contentSize.height)
     {
         [_playerNode removeFromParent];
     }
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
+
     if(_acceleratePlayer){
         [self accelerateTarget:_playerNode];
     }
@@ -99,21 +94,10 @@
 
 -(void) accelerateTarget:(CCNode*)target
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     //_playerMaxVelocity =100.0;
     //_playerNudgeRightVelocity =30.0;
     //_playerNudgeUpVelocity =80.0;
-=======
-    _playerMaxVelocity =100.0;
-    _playerNudgeRightVelocity =30.0;
-    _playerNudgeUpVelocity =80.0;
->>>>>>> origin/master
-=======
-    _playerMaxVelocity =100.0;
-    _playerNudgeRightVelocity =30.0;
-    _playerNudgeUpVelocity =80.0;
->>>>>>> origin/master
     
     CCPhysicsBody* physicsBody = target.physicsBody;
     
@@ -130,18 +114,12 @@
     
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 -(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player wildcard:(CCNode *)wildcard
 {
     NSLog(@"collision - player: %@, wildcard: %@", player, wildcard);
     return YES;
 }
-
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 
 -(void) exitButtonPressed
 {

@@ -10,6 +10,7 @@
 	<key>spriteFrameFiles</key>
 	<array>
 		<string>SpriteSheets/rocketmouse_animations.plist</string>
+		<string>SpriteSheets/GameElements.plist</string>
 		<string>SpriteSheets/Level1b.plist</string>
 		<string>SpriteSheets/Level1a.plist</string>
 		<string>SpriteSheets/Global.plist</string>
