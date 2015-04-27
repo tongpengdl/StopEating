@@ -1,9 +1,7 @@
 //
 //  GameScene.m
-//  LearnSpriteBuilder
 //
-//  Created by Steffen Itterheim on 25/06/14.
-//  Copyright (c) 2014 Apportable. All rights reserved.
+//
 //
 
 #import "GameScene.h"
@@ -25,6 +23,10 @@
     BOOL _acceleratePlayer;
 
     BOOL _drawPhysicsShapes;
+    
+    BOOL _gameover;
+    
+    CCButton* _restartButton;
 
 }
 
@@ -117,6 +119,8 @@
 
 -(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player wildcard:(CCNode *)wildcard
 {
+    _gameover=NO;
+    [self gameOver];
     NSLog(@"collision - player: %@, wildcard: %@", player, wildcard);
     return YES;
 }
@@ -158,9 +162,32 @@
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player exit:(CCNode *)exit
 {
+    [self gameOver];
     [player removeFromParent];
     [exit removeFromParent];
     return NO;
+}
+
+-(void)gameOver
+{
+    if (!_gameover) {
+        NSLog(@"gameover");
+        _gameover=YES;
+        _restartButton.visible=YES;
+        
+        _playerNode.rotation=90.f;
+        _playerNode.physicsBody.allowsRotation=NO;
+        [self stopAllActions];
+        self.userInteractionEnabled=NO;
+        
+        CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:0.2f position:ccp(-2, 2)];
+        CCActionInterval *reverseMovement = [moveBy reverse];
+        CCActionSequence *shakeSequence = [CCActionSequence actionWithArray:@[moveBy, reverseMovement]];
+        CCActionEaseBounce *bounce = [CCActionEaseBounce actionWithAction:shakeSequence];
+
+        [self runAction:bounce];
+    }
+    
 }
 
 @end
