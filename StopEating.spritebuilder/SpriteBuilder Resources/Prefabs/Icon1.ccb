@@ -60,13 +60,13 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string></string>
+			<string>scaleUp</string>
 			<key>cornerRadius</key>
 			<real>16</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
-			<true/>
+			<false/>
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
@@ -89,7 +89,7 @@
 				<key>type</key>
 				<string>StringSimple</string>
 				<key>value</key>
-				<string></string>
+				<string>scaleUp</string>
 			</dict>
 			<dict>
 				<key>name</key>

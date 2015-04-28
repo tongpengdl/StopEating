@@ -158,7 +158,7 @@
 					<key>collisionMask</key>
 					<array/>
 					<key>collisionType</key>
-					<string>gear</string>
+					<string>noDie</string>
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>

@@ -36,6 +36,7 @@
 		B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
+		B875CFD11AEEE56D0065CF4C /* gameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = B875CFD01AEEE56D0065CF4C /* gameOver.m */; };
 		DCED545C195AE0C20059A069 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCED545B195AE0C20059A069 /* GameScene.m */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,8 @@
 		B77F1B3F17B978D7009739AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
+		B875CFCF1AEEE56D0065CF4C /* gameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameOver.h; sourceTree = "<group>"; };
+		B875CFD01AEEE56D0065CF4C /* gameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameOver.m; sourceTree = "<group>"; };
 		DCED545A195AE0C20059A069 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		DCED545B195AE0C20059A069 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +158,8 @@
 				B7378993180767190076A88C /* MainScene.m */,
 				DCED545A195AE0C20059A069 /* GameScene.h */,
 				DCED545B195AE0C20059A069 /* GameScene.m */,
+				B875CFCF1AEEE56D0065CF4C /* gameOver.h */,
+				B875CFD01AEEE56D0065CF4C /* gameOver.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 			files = (
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				B875CFD11AEEE56D0065CF4C /* gameOver.m in Sources */,
 				DCED545C195AE0C20059A069 /* GameScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 			);

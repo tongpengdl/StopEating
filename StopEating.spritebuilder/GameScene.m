@@ -6,6 +6,7 @@
 
 #import "GameScene.h"
 #import "cocos2d.h"
+#import "gameOver.h"
 
 @implementation GameScene
 {
@@ -15,18 +16,21 @@
 	__weak CCNode* _backgroundNode;
     __weak CCNode* _scaleupNode;
     __weak CCNode* _scaledownNode;
+    __weak CCLabelTTF* _timeLabel;
     
     
     CGFloat _playerNudgeRightVelocity;
     CGFloat _playerNudgeUpVelocity;
     CGFloat _playerMaxVelocity;
+    
+    NSString* _timeLabelString;
+    
     BOOL _acceleratePlayer;
 
     BOOL _drawPhysicsShapes;
     
     BOOL _gameover;
     
-    CCButton* _restartButton;
 
 }
 
@@ -34,9 +38,11 @@
 {
 	// enable receiving input events
 	self.userInteractionEnabled = YES;
-	
+    self.second=0;
+    _gameover=NO;
 	// load the current level
 	[self loadLevelNamed:nil];
+
 	
 	NSLog(@"_levelNode = %@", _levelNode);
 }
@@ -46,8 +52,6 @@
 	_physicsNode = (CCPhysicsNode*)[_levelNode getChildByName:@"physics" recursively:NO];
 	_backgroundNode = [_levelNode getChildByName:@"background" recursively:NO];
 	_playerNode = [_physicsNode getChildByName:@"player" recursively:YES];
-    _scaleupNode = [_physicsNode getChildByName:@"scaleupstar" recursively:YES];
-    _scaledownNode = [_physicsNode getChildByName:@"scaledownstar" recursively:YES];
     
     _physicsNode.debugDraw=false;
     
@@ -55,12 +59,12 @@
     
     CCNode* sawNoAutoplay = [_physicsNode getChildByName:@"sawNoAutoplay" recursively:YES];
     [sawNoAutoplay.animationManager runAnimationsForSequenceNamed:@"Default Timeline"];
+    
+     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTimer:) userInfo:nil repeats:YES];
 	
 	NSAssert1(_physicsNode, @"physics node not found in level: %@", levelCCB);
 	NSAssert1(_backgroundNode, @"background node not found in level: %@", levelCCB);
 	NSAssert1(_playerNode, @"player node not found in level: %@", levelCCB);
-    NSAssert1(_scaleupNode, @"scaleup star not found in level: %@", levelCCB);
-    NSAssert1(_scaledownNode, @"scaledown star not found in level: %@", levelCCB);
 }
 
 -(void) touchBegan:(CCTouch *)touch withEvent:(UIEvent *)event
@@ -84,6 +88,7 @@
     if(_playerNode.position.y<-_playerNode.contentSize.height)
     {
         [_playerNode removeFromParent];
+        [self gameOver];
     }
 
     if(_acceleratePlayer){
@@ -96,10 +101,6 @@
 
 -(void) accelerateTarget:(CCNode*)target
 {
-
-    //_playerMaxVelocity =100.0;
-    //_playerNudgeRightVelocity =30.0;
-    //_playerNudgeUpVelocity =80.0;
     
     CCPhysicsBody* physicsBody = target.physicsBody;
     
@@ -117,19 +118,36 @@
 }
 
 
--(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player wildcard:(CCNode *)wildcard
+-(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player die:(CCNode *)die
 {
     _gameover=NO;
     [self gameOver];
-    NSLog(@"collision - player: %@, wildcard: %@", player, wildcard);
     return YES;
 }
 
--(void) exitButtonPressed
+-(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player scaleDown:(CCNode *)scaleDown
 {
-	CCScene* scene = [CCBReader loadAsScene:@"MainScene"];
-	CCTransition* transition = [CCTransition transitionFadeWithDuration:1.5];
-	[[CCDirector sharedDirector] presentScene:scene withTransition:transition];
+    NSLog(@"scale down");
+    CCActionScaleBy* reduce = [CCActionScaleBy actionWithDuration:1.0 scale:0.9];
+    [player runAction:reduce];
+    
+    return YES;
+}
+
+-(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player scaleUp:(CCNode *)scaleUp
+{
+    NSLog(@"scale up");
+    CCActionScaleBy* grow = [CCActionScaleBy actionWithDuration:1.0 scale:1.1];
+    [player runAction:grow];
+    
+    return YES;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player exit:(CCNode *)exit
+{
+    [player removeFromParent];
+    [exit removeFromParent];
+    return NO;
 }
 
 
@@ -160,32 +178,37 @@
 	}
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player exit:(CCNode *)exit
+
+
+-(void)updateTimer:(NSTimer *)timer
 {
-    [self gameOver];
-    [player removeFromParent];
-    [exit removeFromParent];
-    return NO;
+    self.second = self.second + 1;
+    if(_gameover){
+        [timer invalidate];
+    }
+    self.n = self.n + 1;
+    _timeLabel.string=[NSString stringWithFormat:@"%d s", self.n];
+    
+    NSLog(@"%d",self.n);
 }
+
 
 -(void)gameOver
 {
     if (!_gameover) {
         NSLog(@"gameover");
         _gameover=YES;
-        _restartButton.visible=YES;
         
         _playerNode.rotation=90.f;
         _playerNode.physicsBody.allowsRotation=NO;
         [self stopAllActions];
         self.userInteractionEnabled=NO;
         
-        CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:0.2f position:ccp(-2, 2)];
-        CCActionInterval *reverseMovement = [moveBy reverse];
-        CCActionSequence *shakeSequence = [CCActionSequence actionWithArray:@[moveBy, reverseMovement]];
-        CCActionEaseBounce *bounce = [CCActionEaseBounce actionWithAction:shakeSequence];
-
-        [self runAction:bounce];
+        gameOver* gameEndPopover=(gameOver*) [CCBReader load:@"gameOver"];
+        gameEndPopover.positionType = CCPositionTypeNormalized;
+        gameEndPopover.position = ccp(0.5, 0.5);
+        gameEndPopover.zOrder = INT_MAX;
+        [self addChild:gameEndPopover];
     }
     
 }

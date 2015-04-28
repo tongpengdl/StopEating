@@ -10,4 +10,7 @@
 
 @interface GameScene : CCNode<CCPhysicsCollisionDelegate>
 
+@property int n ;
+@property int second;
+
 @end

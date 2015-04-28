@@ -121,6 +121,8 @@
 		</dict>
 		<key>SpriteSheets/Pastries_64x72</key>
 		<dict>
+			<key>isDirty</key>
+			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
@@ -282,6 +284,11 @@
 			<integer>2</integer>
 			<key>tabletScale</key>
 			<integer>1</integer>
+		</dict>
+		<key>sw.png</key>
+		<dict>
+			<key>format_ios_compress</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>versionStr</key>
