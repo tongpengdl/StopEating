@@ -119,6 +119,13 @@
 			<key>previewFolderHidden</key>
 			<false/>
 		</dict>
+		<key>SpriteSheets/PNGS</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>SpriteSheets/Pastries_64x72</key>
 		<dict>
 			<key>isDirty</key>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>SpriteSheets/PNGS/ball.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{69, 1}, {256, 256}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {256, 256}}</string>
+			<key>sourceSize</key>
+			<string>{256, 256}</string>
+		</dict>
+		<key>SpriteSheets/PNGS/blade.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 515}, {256, 256}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {256, 256}}</string>
+			<key>sourceSize</key>
+			<string>{256, 256}</string>
+		</dict>
+		<key>SpriteSheets/PNGS/metal-chain.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{35, 1}, {32, 512}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 512}}</string>
+			<key>sourceSize</key>
+			<string>{32, 512}</string>
+		</dict>
+		<key>SpriteSheets/PNGS/metal-spike-block.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{69, 259}, {256, 128}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {256, 128}}</string>
+			<key>sourceSize</key>
+			<string>{256, 128}</string>
+		</dict>
+		<key>SpriteSheets/PNGS/metal-spike.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{259, 585}, {64, 128}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {64, 128}}</string>
+			<key>sourceSize</key>
+			<string>{64, 128}</string>
+		</dict>
+		<key>SpriteSheets/PNGS/metal-spikes.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 903}, {256, 64}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {256, 64}}</string>
+			<key>sourceSize</key>
+			<string>{256, 64}</string>
+		</dict>
+		<key>SpriteSheets/PNGS/rope-chain.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {32, 512}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {32, 512}}</string>
+			<key>sourceSize</key>
+			<string>{32, 512}</string>
+		</dict>
+		<key>SpriteSheets/PNGS/wood-spike-block.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 773}, {256, 128}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {256, 128}}</string>
+			<key>sourceSize</key>
+			<string>{256, 128}</string>
+		</dict>
+		<key>SpriteSheets/PNGS/wood-spike.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{259, 455}, {64, 128}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {64, 128}}</string>
+			<key>sourceSize</key>
+			<string>{64, 128}</string>
+		</dict>
+		<key>SpriteSheets/PNGS/wood-spikes.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{69, 389}, {256, 64}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {256, 64}}</string>
+			<key>sourceSize</key>
+			<string>{256, 64}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{1024, 1024}</string>
+		<key>textureFileName</key>
+		<string>PNGS.png</string>
+	</dict>
+</dict>
+</plist>

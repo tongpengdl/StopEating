@@ -7,6 +7,7 @@
 #import "GameScene.h"
 #import "cocos2d.h"
 #import "gameOver.h"
+#import "gameWin.h"
 
 @implementation GameScene
 {
@@ -61,10 +62,7 @@
     [sawNoAutoplay.animationManager runAnimationsForSequenceNamed:@"Default Timeline"];
     
      [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTimer:) userInfo:nil repeats:YES];
-	
-	NSAssert1(_physicsNode, @"physics node not found in level: %@", levelCCB);
-	NSAssert1(_backgroundNode, @"background node not found in level: %@", levelCCB);
-	NSAssert1(_playerNode, @"player node not found in level: %@", levelCCB);
+
 }
 
 -(void) touchBegan:(CCTouch *)touch withEvent:(UIEvent *)event
@@ -137,7 +135,7 @@
 -(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player scaleUp:(CCNode *)scaleUp
 {
     NSLog(@"scale up");
-    CCActionScaleBy* grow = [CCActionScaleBy actionWithDuration:1.0 scale:1.1];
+    CCActionScaleBy* grow = [CCActionScaleBy actionWithDuration:1.0 scale:1.2];
     [player runAction:grow];
     
     return YES;
@@ -145,6 +143,7 @@
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player exit:(CCNode *)exit
 {
+    [self gameWin];
     [player removeFromParent];
     [exit removeFromParent];
     return NO;
@@ -210,6 +209,18 @@
         gameEndPopover.zOrder = INT_MAX;
         [self addChild:gameEndPopover];
     }
+    
+}
+
+-(void)gameWin
+{
+    _gameover=YES;
+    gameWin* gameWinPopover=(gameWin*) [CCBReader load:@"gameWin"];
+    gameWinPopover.positionType = CCPositionTypeNormalized;
+    gameWinPopover.position = ccp(0.21, 0.15);
+    gameWinPopover.zOrder = INT_MAX;
+    [self addChild:gameWinPopover];
+
     
 }
 

@@ -37,6 +37,7 @@
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
 		B875CFD11AEEE56D0065CF4C /* gameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = B875CFD01AEEE56D0065CF4C /* gameOver.m */; };
+		B875CFE41AF033320065CF4C /* gameWin.m in Sources */ = {isa = PBXBuildFile; fileRef = B875CFE31AF033320065CF4C /* gameWin.m */; };
 		DCED545C195AE0C20059A069 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCED545B195AE0C20059A069 /* GameScene.m */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,8 @@
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
 		B875CFCF1AEEE56D0065CF4C /* gameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameOver.h; sourceTree = "<group>"; };
 		B875CFD01AEEE56D0065CF4C /* gameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameOver.m; sourceTree = "<group>"; };
+		B875CFE21AF033320065CF4C /* gameWin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameWin.h; sourceTree = "<group>"; };
+		B875CFE31AF033320065CF4C /* gameWin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameWin.m; sourceTree = "<group>"; };
 		DCED545A195AE0C20059A069 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		DCED545B195AE0C20059A069 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +163,8 @@
 				DCED545B195AE0C20059A069 /* GameScene.m */,
 				B875CFCF1AEEE56D0065CF4C /* gameOver.h */,
 				B875CFD01AEEE56D0065CF4C /* gameOver.m */,
+				B875CFE21AF033320065CF4C /* gameWin.h */,
+				B875CFE31AF033320065CF4C /* gameWin.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B875CFD11AEEE56D0065CF4C /* gameOver.m in Sources */,
 				DCED545C195AE0C20059A069 /* GameScene.m in Sources */,
+				B875CFE41AF033320065CF4C /* gameWin.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
