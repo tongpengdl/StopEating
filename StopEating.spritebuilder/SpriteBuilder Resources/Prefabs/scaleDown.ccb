@@ -195,7 +195,7 @@
 					<key>cornerRadius</key>
 					<real>8.75</real>
 					<key>density</key>
-					<real>1</real>
+					<real>0.0</real>
 					<key>dynamic</key>
 					<false/>
 					<key>elasticity</key>
@@ -309,6 +309,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>

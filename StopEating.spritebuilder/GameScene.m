@@ -2,7 +2,7 @@
 //  GameScene.m
 //  StopEating
 //
-//  Created by peng tong on 4/27/15.
+//  Created by peng tong on 3/15/15.
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
@@ -128,19 +128,21 @@
 -(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player scaleDown:(CCNode *)scaleDown
 {
     NSLog(@"scale down");
+    [scaleDown removeFromParent];
     CCActionScaleBy* reduce = [CCActionScaleBy actionWithDuration:1.0 scale:0.9];
     [player runAction:reduce];
     
-    return YES;
+    return NO;
 }
 
 -(bool)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player scaleUp:(CCNode *)scaleUp
 {
     NSLog(@"scale up");
+    [scaleUp removeFromParent];
     CCActionScaleBy* grow = [CCActionScaleBy actionWithDuration:1.0 scale:1.2];
     [player runAction:grow];
     
-    return YES;
+    return NO;
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(CCNode *)player exit:(CCNode *)exit
