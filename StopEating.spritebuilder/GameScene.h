@@ -1,9 +1,9 @@
 //
 //  GameScene.h
-//  LearnSpriteBuilder
+//  StopEating
 //
-//  Created by Steffen Itterheim on 25/06/14.
-//  Copyright (c) 2014 Apportable. All rights reserved.
+//  Created by peng tong on 4/27/15.
+//  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
 #import "CCNode.h"
